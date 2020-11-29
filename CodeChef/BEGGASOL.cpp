@@ -13,7 +13,7 @@ void solve()
 	cin>>n;
     	int i,a[n],fuel;
     	for(i=0;i<n;i++)
-    		cin>>a[i];
+    		 cin>>a[i];
     	fuel=a[0];
     	for(i=1;i<n;i++){
     		if(fuel>=1){

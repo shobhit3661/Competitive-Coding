@@ -11,7 +11,7 @@ using namespace std;
 #define ss second
 int main()
 {
-    ios_base::sync_with_stdio(false);
+     ios_base::sync_with_stdio(false);
     cin.tie(0);
     ll t;
     cin>>t;

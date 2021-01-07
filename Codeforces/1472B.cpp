@@ -28,12 +28,20 @@ void solve()
 		temp+=t;
 	}
 	
-	if(temp%2==0 && cnt1%2==0 )
+	if(temp%2!=0)
 	{
-		cout<<"YES"<<"\n";
+		cout<<"NO"<<"\n";
 	}
 	else{
-		cout<<"NO"<<"\n";
+		ll sum = temp/2;
+		if(sum%2==0 || (sum%2==1 && cnt!=0))
+		{
+			cout<<"YES"<<"\n";
+		}
+		else
+		{
+			cout<<"NO"<<"\n";
+		}
 	}
 	
 	

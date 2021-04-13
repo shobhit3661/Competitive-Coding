@@ -1,19 +1,40 @@
 import java.util.*;
 public class Start{
-    public static void main(String[] args){
- Scanner sc = new Scanner(System.in);
- int noOfItems = sc.nextInt();
- String input="";
- int price[] = new int[noOfItems];
- int percentage[] = new int[noOfItems];
- String itemName[] = new String[noOfItems];
- String[] values = new String[3];
- for(int i=0;i<noOfItems;++i){
-  input = sc.nextLine();
-  values = input.split(",");
-  itemName[i] = values[0];
-  price[i] = Integer.parseInt(values[1]);
-  percentage[i] = Integer.parseInt(values[2]);
- }
-}
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n=10;
+        //n = sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i;j<n-1;j++)
+            {
+                System.out.print("  ");
+            }
+            int count = i*2+1;
+            int p = i+1;
+            while(count>0)
+            {
+                if(count==(i*2)/2)
+                {
+                    p--;
+                }
+             
+                if(count>(i*2)/2)
+                {
+                    System.out.print(p+" ");
+                    p++;
+                }
+                if(count<=(i*2)/2)
+                {
+                    p--;
+                    System.out.print(p+" ");
+                }
+                count--;
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
 }
